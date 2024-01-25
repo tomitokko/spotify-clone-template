@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Profile</title>
+  <link rel="stylesheet" type="text/css" href="search-style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+
+    .artist-header {
+      background-image: url('https://cdn.punchng.com/wp-content/uploads/2023/05/20120536/Rema.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+    }
+
+  </style>
+</head>
+<body class="bg-black text-white flex">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Spotify Logo -->
+    <div class="logo-container">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png" alt="Spotify Logo" style="width: 100%; height: auto; padding: 20px; box-sizing: border-box;">
+    </div>
+
+
+
+    <!-- Top section of the sidebar -->
+    <div class="sidebar-section">
+        <a href="#" class="sidebar-link active">
+            <span class="sidebar-link-icon">🏠</span>
+            Home
+        </a>
+        <a href="#" class="sidebar-link">
+            <span class="sidebar-link-icon">🔍</span>
+            Search
+        </a>
+        <a href="#" class="sidebar-link">
+            <span class="sidebar-link-icon">🎵</span>
+            Your Library
+        </a>
+    </div>
+
+    <!-- Bottom section of the sidebar -->
+    <div class="sidebar-section">
+        <a href="#" class="sidebar-link active">
+            <span class="sidebar-link-icon">💜</span>
+            <span class="sidebar-link-text">Liked Songs</span>
+        </a>
+        <!-- Repeat for each item -->
+        <a href="#" class="sidebar-link">
+            <span class="sidebar-link-icon">🎶</span>
+            <span class="sidebar-link-text">African Lofi Experience</span>
+        </a>
+        <a href="#" class="sidebar-link">
+            <span class="sidebar-link-icon">🎹</span>
+            <span class="sidebar-link-text">Ayra Starr</span>
+        </a>
+        <!-- ... more links ... -->
+    </div>
+</div>
+
+
+
+
+  <!-- Main Content -->
+  <div class="flex-1">
+      
+    <br>
+    <br>
+    <header class="header-container">
+      <div class="search-bar" style="width: 390px;">
+          <input type="search" placeholder="What do you want to listen to?" aria-label="Search">
+          <button type="submit" aria-label="Search">
+              🔍
+          </button>
+      </div>
+    </header>
+    
+    <!-- Popular Tracks Section -->
+    <div class="p-5">
+      <br>
+      <h2 class="text-2xl font-bold mb-4">Search Results</h2>
+      <div class="divide-y divide-gray-800">
+        <!-- Single Track Row -->
+        <div class="flex justify-between items-center py-3">
+          <div class="flex items-center space-x-4">
+            <img src="https://i.scdn.co/image/ab67616d00001e02963265801aa5c9740ad159b7" alt="Song Image" class="w-12 h-12">
+            <div>
+              <p class="text-base font-medium">Calm Down</p>
+              <p class="text-xs text-gray-400">Rema, Selena Gomez</p>
+            </div>
+          </div>
+          <div class="text-gray-400">1,182,474,314</div>
+          <div class="text-gray-400">3:59</div>
+        </div>
+        <!-- Repeat for other tracks -->
+      </div>
+      <!-- <a href="#" class="text-green-500 text-sm">See more</a> -->
+    </div>
+    
+  </div>
+
+</body>
+</html>
